@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>BB SPED - spedycja krajowa i międzynarodowa, Sopot</title>
+<meta name="description" content="BB SPED Sp. z o.o. z Sopotu: spedycja i transport towarów w Polsce, w całej Unii Europejskiej i poza nią. Ubezpieczenie OCS 300 tys. euro. Tel. 601 301 273.">
+<meta name="theme-color" content="#0C1633">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-m-540.webp" imagesrcset="img/hero-m-420.webp 420w, img/hero-m-540.webp 540w, img/hero-m-720.webp 720w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-960.webp 960w, img/hero-1280.webp 1280w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/saira-rdzen.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/manrope-rdzen.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/saira-pl.woff2" crossorigin>
+<style>
+@font-face{font-family:Saira;src:url(fonts/saira-rdzen.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Saira;src:url(fonts/saira-pl.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Manrope;src:url(fonts/manrope-rdzen.woff2) format("woff2");font-weight:400 800;font-display:swap;unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Manrope;src:url(fonts/manrope-pl.woff2) format("woff2");font-weight:400 800;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Saira fb";src:local("Arial");size-adjust:96%;ascent-override:96%}
+@font-face{font-family:"Manrope fb";src:local("Arial");size-adjust:104%}
+:root{--n:#0C1633;--n2:#16244D;--bl:#3F5BD9;--bl2:#2E47B8;--b1:#5F7AEA;--b2:#3CB1E2;--tq:#18E8D9;--tq2:#1CE0DA;--s1:#CEEBFD;--s2:#A9DEFE;--s3:#85D0FE;--t:#101828;--m:#4A5568;--g:#F2F5F9;--l:#DCE3EC;--hh:68px;--w:min(92vw,1720px);--gr:linear-gradient(180deg,#5F7AEA,#3CB1E2 50%,#18E8D9)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Manrope,"Manrope fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(16.5px,.3vw + 15.4px,18.5px);line-height:1.62;color:var(--t);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:Saira,"Saira fb",Arial,sans-serif;font-weight:650;line-height:1.04;letter-spacing:-.01em}
+h1{font-size:clamp(36px,4.6vw,92px);text-wrap:balance}
+h2{font-size:clamp(32px,3.2vw,62px);text-wrap:balance}
+h3{font-size:clamp(22px,1.4vw,28px);line-height:1.15}
+p{margin:0}
+.wrap{width:var(--w);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:14px;background:var(--bl);color:#fff;text-decoration:none;font-family:Saira,"Saira fb",Arial,sans-serif;font-weight:600;font-size:18px;line-height:1;padding:18px 24px 18px 26px;border:0;border-radius:4px;cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--bl2)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn:focus-visible,.menu a:focus-visible{outline:3px solid var(--tq);outline-offset:3px}
+/* piksele z logo */
+.px{display:inline-block;width:12px;height:12px;border-radius:2px;background:var(--tq2);flex:none}
+/* naglowek */
+.top{position:fixed;inset:0 0 auto;z-index:50;height:var(--hh);color:#fff;transition:background .25s,color .25s,box-shadow .25s}
+.top.sc,.top.open{background:#fff;color:var(--t);box-shadow:0 1px 0 var(--l)}
+.top .wrap{height:100%;display:flex;align-items:center;gap:28px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto}
+.logo svg{width:46px;height:38px}
+.logo span{font-family:Saira,"Saira fb",Arial,sans-serif;font-weight:700;font-size:23px;letter-spacing:.02em;line-height:1}
+.top:not(.sc):not(.open) .logo span{text-shadow:0 1px 10px rgba(0,0,0,.35)}
+.menu{display:flex;gap:30px}
+.menu a{text-decoration:none;font-weight:600;font-size:16px;padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover,.menu a.on{border-color:var(--tq2)}
+.tel{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-family:Saira,"Saira fb",Arial,sans-serif;font-weight:600;font-size:18px;white-space:nowrap}
+.tel svg{width:18px;height:18px}
+.burger{display:none;background:none;border:0;color:inherit;width:44px;height:44px;margin-right:-8px;cursor:pointer}
+.burger svg{width:28px;height:28px}
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;color:#fff;background:#3b4a5a;isolation:isolate}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:50% 60%}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(12,22,51,.55) 0,rgba(12,22,51,0) 22%,rgba(12,22,51,0) 38%,rgba(12,22,51,.78) 72%,rgba(12,22,51,.9))}
+.hero .wrap{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;padding:calc(var(--hh) + 32px) 0 clamp(36px,6vh,80px)}
+.hero .txt{max-width:980px}
+.hero p.lead{margin-top:20px;max-width:44em;font-size:clamp(17px,.5vw + 15px,21px);color:rgba(255,255,255,.92)}
+.hero .cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 30px;margin-top:30px}
+.hero .cta .tel{font-size:20px}
+.strumien{position:absolute;right:0;bottom:clamp(36px,6vh,80px);width:clamp(180px,16vw,300px);z-index:2;display:none}
+/* sekcje */
+.sek{padding:clamp(64px,8vw,140px) 0}
+.szary{background:var(--g)}
+.glowa{display:grid;gap:18px;max-width:900px;margin-bottom:clamp(36px,4vw,64px)}
+.glowa p{color:var(--m);font-size:clamp(17px,.4vw + 15.5px,20px)}
+/* uslugi */
+.uslugi{display:grid;grid-template-columns:1fr;border-top:1px solid var(--l)}
+.usl{display:grid;grid-template-columns:auto 1fr;gap:6px 20px;padding:28px 0;border-bottom:1px solid var(--l)}
+.usl .ikp{grid-row:span 2;display:grid;grid-template-columns:repeat(2,9px);gap:4px;align-content:start;padding-top:9px}
+.usl .ikp i{width:9px;height:9px;border-radius:2px;background:var(--s2)}
+.usl .ikp i:nth-child(2){background:var(--s3)}.usl .ikp i:nth-child(3){background:var(--b2)}.usl .ikp i:nth-child(4){background:var(--tq2)}
+.usl p{color:var(--m)}
+/* galeria */
+.tor{display:grid;grid-auto-flow:column;grid-auto-columns:78%;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;cursor:grab}
+.tor::-webkit-scrollbar{display:none}
+.tor.drag{cursor:grabbing;scroll-snap-type:none}
+.kafel{scroll-snap-align:start;margin:0;position:relative}
+.kafel button{display:block;width:100%;padding:0;border:0;background:#cfd8e3;cursor:zoom-in;clip-path:polygon(0 18px,18px 18px,18px 0,100% 0,100% 100%,0 100%)}
+.kafel img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .5s}
+.kafel button:hover img{transform:scale(1.04)}
+.kafel figcaption{margin-top:12px;font-weight:600;font-size:16px;display:flex;gap:10px;align-items:baseline}
+.kafel figcaption .px{width:9px;height:9px;transform:translateY(-1px)}
+.gal-dol{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:22px;color:var(--m);font-size:14.5px}
+.navb{display:flex;gap:10px}
+.navb button{width:48px;height:48px;border:1px solid #b9c4d3;background:#fff;color:var(--t);border-radius:4px;cursor:pointer;display:grid;place-items:center}
+.navb button:hover{border-color:var(--bl);color:var(--bl)}
+.navb svg{width:20px;height:20px}
+/* ciemna */
+.ciemna{background:var(--n);color:#fff;position:relative;overflow:hidden}
+.ciemna .wrap{display:grid;gap:clamp(40px,5vw,90px);align-items:center}
+.ciemna .glowa p{color:rgba(255,255,255,.78)}
+.lista{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.14)}
+.lista li{display:grid;grid-template-columns:22px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.lista .px{margin-top:7px}
+.lista b{display:block;font-family:Saira,"Saira fb",Arial,sans-serif;font-weight:600;font-size:clamp(19px,1.1vw,23px);line-height:1.25}
+.lista span{color:rgba(255,255,255,.74);font-size:16.5px}
+.ocs{display:grid;align-content:center;justify-items:start;gap:14px}
+.ocs svg{width:min(100%,520px);height:auto}
+.ocs p{color:rgba(255,255,255,.74);max-width:30em;font-size:16px}
+/* kroki */
+.kroki{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--l)}
+.kroki li{display:grid;grid-template-columns:44px 1fr;gap:18px;padding:24px 0;border-bottom:1px solid var(--l)}
+.kroki .st{display:flex;flex-wrap:wrap;gap:3px;width:44px;align-content:flex-start;padding-top:6px}
+.kroki .st i{width:9px;height:9px;border-radius:2px;background:var(--s2)}
+.kroki .st i.t{background:var(--tq2)}
+.kroki b{display:block;font-family:Saira,"Saira fb",Arial,sans-serif;font-weight:600;font-size:clamp(19px,1.1vw,23px);line-height:1.25;margin-bottom:4px}
+.kroki span{color:var(--m)}
+.kroki-cta{margin-top:36px}
+/* kontakt */
+.kont{display:grid;gap:clamp(40px,5vw,96px)}
+.dane h3{margin-bottom:14px}
+.dane p{margin-bottom:6px}
+.dane a{text-decoration:none;font-weight:600}
+.dane a:hover{color:var(--bl)}
+.dane .rej{color:var(--m);font-size:15.5px;margin-top:18px}
+.dane .duzy{font-family:Saira,"Saira fb",Arial,sans-serif;font-size:clamp(24px,1.7vw,32px);font-weight:600;display:inline-flex;align-items:center;gap:12px}
+.mapa{margin-top:28px;aspect-ratio:16/10;background:#dfe6ee;position:relative}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+form{background:#fff;padding:clamp(22px,2.4vw,44px);border-top:4px solid;border-image:linear-gradient(90deg,#5F7AEA,#3CB1E2,#18E8D9) 1}
+form h3{margin-bottom:6px}
+form .op{color:var(--m);font-size:15.5px;margin-bottom:22px}
+.pola{display:grid;grid-template-columns:1fr;gap:16px}
+label{display:grid;gap:6px;font-weight:600;font-size:15px}
+input,select,textarea{font:inherit;font-weight:400;font-size:16px;color:var(--t);background:#fff;border:1px solid #b9c4d3;border-radius:4px;padding:13px 14px;width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--bl);outline-offset:0;border-color:var(--bl)}
+textarea{min-height:110px;resize:vertical}
+.zgoda{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:14px;color:var(--m);margin:18px 0 22px}
+.zgoda input{width:20px;height:20px;flex:none;margin-top:2px}
+.msg{margin-top:18px;padding:16px 18px;background:#E9FBFA;border-left:4px solid var(--tq2);font-size:16px}
+.msg[hidden]{display:none}
+/* stopka */
+.stopka{padding:56px 0 30px;border-top:1px solid var(--l);font-size:15.5px;color:var(--m)}
+.stopka .kol{display:grid;grid-template-columns:1fr 1fr;gap:28px 24px}
+.stopka h4{margin:0 0 10px;font-family:Saira,"Saira fb",Arial,sans-serif;font-size:17px;color:var(--t)}
+.stopka p{margin-bottom:4px}
+.stopka a{text-decoration:none}.stopka a:hover{color:var(--bl)}
+.stopka .marka{grid-column:1/-1}
+.stopka .marka .logo{color:var(--t);margin-bottom:12px}
+.dol{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px;margin-top:36px;padding-top:20px;border-top:1px solid var(--l)}
+.dol .cr{font-size:.875em;line-height:1}
+.zrodla{margin-top:16px;font-size:12.5px;color:#6b7686}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(8,14,32,.94);display:grid;place-items:center;padding:56px 12px}
+.lb[hidden]{display:none}
+.lb img{max-width:min(1400px,100%);max-height:calc(100vh - 140px);width:auto;height:auto;object-fit:contain}
+.lb p{color:#dfe6ee;text-align:center;margin-top:12px;font-size:15px}
+.lb button{position:absolute;background:rgba(255,255,255,.1);border:0;color:#fff;width:52px;height:52px;border-radius:4px;cursor:pointer;display:grid;place-items:center}
+.lb button:hover{background:rgba(255,255,255,.2)}
+.lb button svg{width:24px;height:24px}
+.lb .x{top:12px;right:12px}.lb .pv{left:12px;top:50%;transform:translateY(-50%)}.lb .nx{right:12px;top:50%;transform:translateY(-50%)}
+/* responsywnosc */
+@media (max-width:1023px){
+  .menu{position:fixed;top:var(--hh);left:0;right:0;flex-direction:column;gap:0;background:#fff;color:var(--t);padding:8px 4vw 24px;box-shadow:0 12px 24px rgba(12,22,51,.12);display:none}
+  .top.open .menu{display:flex}
+  .menu a{padding:15px 0;border-bottom:1px solid var(--l);font-size:18px}
+  .menu a.on{border-color:var(--l);color:var(--bl)}
+  .burger{display:grid;place-items:center}
+  .top .tel-g{display:none}
+}
+@media (max-width:560px){
+  :root{--hh:62px}
+  .logo svg{width:40px;height:33px}.logo span{font-size:21px}
+  .hero .wrap{padding-bottom:28px}
+  .hero p.lead{margin-top:16px}
+  .hero .cta{margin-top:26px;gap:14px 22px}
+  .btn{padding:17px 20px 17px 22px}
+}
+@media (max-width:899px){.ocs svg{width:min(70%,300px)}}
+@media (min-width:640px){.tor{grid-auto-columns:46%}.pola{grid-template-columns:1fr 1fr}.pola .cale{grid-column:1/-1}}
+@media (min-width:900px){
+  .uslugi{grid-template-columns:1fr 1fr;column-gap:56px}
+  .tor{grid-auto-flow:row;grid-template-columns:repeat(3,1fr);overflow:visible;cursor:auto;gap:22px}
+  .navb{display:none}
+  .ciemna .wrap{grid-template-columns:1.15fr .85fr}
+  .kroki{grid-template-columns:repeat(2,1fr);column-gap:56px}
+  .kont{grid-template-columns:.9fr 1.1fr}
+  .stopka .kol{grid-template-columns:1.4fr 1fr 1fr 1fr}.stopka .marka{grid-column:auto}
+}
+@media (min-width:1100px){.strumien{display:block}.hero .txt{max-width:min(980px,calc(100% - 340px))}}
+@media (min-width:1500px){.uslugi{grid-template-columns:repeat(4,1fr);column-gap:40px}.usl{grid-template-columns:1fr;padding:32px 0}.usl .ikp{grid-row:auto;padding:0 0 10px}.kroki{grid-template-columns:repeat(4,1fr);column-gap:40px}}
+@media (min-width:1800px){.tor{grid-template-columns:repeat(6,1fr)}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.kafel img{transition:none}}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="BB SPED - strona główna">
+      <svg viewBox="0 0 228 190" aria-hidden="true"><defs><linearGradient id="lg1" x1=".6" y1="0" x2=".4" y2="1"><stop offset="0" stop-color="#5F7AEA"/><stop offset=".5" stop-color="#3CB1E2"/><stop offset="1" stop-color="#18E8D9"/></linearGradient></defs><rect x="77.75" y="3.25" width="27.25" height="27.5" rx="4.9" fill="#CEEBFD"/><rect x="42.25" y="32" width="24.5" height="24.75" rx="4.4" fill="#1CE0DA"/><rect x="6" y="45.5" width="17.75" height="17.5" rx="3.2" fill="#A9DEFE"/><rect x="48.5" y="81" width="36.5" height="36.75" rx="6.6" fill="#85D0FE"/><rect x="10.75" y="89" width="20.25" height="20.75" rx="3.6" fill="#CEEBFD"/><rect x="25.75" y="142.75" width="26.25" height="26.25" rx="4.7" fill="#A9DEFE"/><rect x="72.25" y="161" width="25.75" height="26" rx="4.6" fill="#1CE0DA"/><path fill="url(#lg1)" fill-rule="evenodd" d="M121 17 121 40 120 42 116 44 97 44 97 45 97 80 115 81 119 83 121 87 121 111 119 115 116 117 113 118 97 118 97 118 97 142 97 143 105 143 109 145 110 148 110 168 174 168 188 166 198 162 207 156 214 148 218 140 221 132 220 117 216 106 211 100 207 96 194 89 195 88 200 85 206 79 211 74 214 66 216 58 216 48 212 37 209 32 201 26 194 22 184 19 169 17ZM134 106 165 105 171 106 176 108 181 113 183 117 183 126 181 131 176 136 169 139 134 139ZM134 47 135 46 164 46 173 49 178 53 179 56 180 61 178 67 174 73 167 76 135 76 134 75Z"/></svg>
+      <span>BB SPED</span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Menu główne">
+      <a href="#uslugi">Usługi</a>
+      <a href="#galeria">W trasie</a>
+      <a href="#bezpieczenstwo">Bezpieczeństwo</a>
+      <a href="#zlecenie">Jak zlecić</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="tel tel-g" href="tel:+48601301273"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="2" width="7" height="7" rx="1.5" fill="#1CE0DA"/><rect x="11" y="11" width="7" height="7" rx="1.5" fill="currentColor"/><rect x="11" y="2" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>601 301 273</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Otwórz menu"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="M4 8h20M4 14h20M4 20h20" stroke="currentColor" stroke-width="2.2" fill="none"/></svg></button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <picture>
+    <source media="(max-width:760px)" srcset="img/hero-m-420.webp 420w, img/hero-m-540.webp 540w, img/hero-m-720.webp 720w" sizes="100vw">
+    <img src="img/hero-1600.webp" srcset="img/hero-960.webp 960w, img/hero-1280.webp 1280w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" sizes="100vw" width="2000" height="1125" alt="Prosta droga przez otwarty krajobraz" fetchpriority="high">
+  </picture>
+  <div class="wrap">
+    <div class="txt">
+      <h1>Spedycja krajowa i międzynarodowa z Sopotu</h1>
+      <p class="lead">Organizujemy transport towarów w całej Unii Europejskiej i do państw spoza jej granic. Pracujemy ze zweryfikowanymi przewoźnikami, a zlecenia chroni ubezpieczenie OC spedytora do 300 tys. euro.</p>
+      <div class="cta">
+        <a class="btn" href="#kontakt">Zapytaj o transport<svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+        <a class="tel" href="tel:+48601301273"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="2" width="7" height="7" rx="1.5" fill="#1CE0DA"/><rect x="11" y="11" width="7" height="7" rx="1.5" fill="currentColor"/><rect x="11" y="2" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>601 301 273</a>
+      </div>
+    </div>
+    <svg class="strumien" viewBox="0 0 300 260" aria-hidden="true"><rect x="10" y="150" width="18" height="18" rx="3" fill="#CEEBFD" opacity=".55"/><rect x="40" y="96" width="24" height="24" rx="4" fill="#A9DEFE" opacity=".7"/><rect x="58" y="180" width="30" height="30" rx="5" fill="#85D0FE" opacity=".8"/><rect x="104" y="128" width="36" height="36" rx="6" fill="#1CE0DA" opacity=".85"/><rect x="118" y="40" width="28" height="28" rx="5" fill="#CEEBFD" opacity=".75"/><rect x="162" y="196" width="40" height="40" rx="7" fill="#A9DEFE" opacity=".9"/><rect x="176" y="86" width="48" height="48" rx="8" fill="#3CB1E2"/><rect x="236" y="150" width="58" height="58" rx="9" fill="#18E8D9"/></svg>
+  </div>
+</section>
+
+<section class="sek" id="uslugi">
+  <div class="wrap">
+    <div class="glowa">
+      <h2>Czym się zajmujemy</h2>
+      <p>Zbieramy zlecenia, dobieramy przewoźnika i prowadzimy ładunek do miejsca rozładunku. Kompleksowo obsługujemy towary w Polsce, w całej Unii Europejskiej i poza nią.</p>
+    </div>
+    <div class="uslugi">
+      <div class="usl"><span class="ikp" aria-hidden="true"><i></i><i></i><i></i><i></i></span><h3>Spedycja międzynarodowa</h3><p>Transport towarów między krajami Unii Europejskiej - od zapytania i wyceny po potwierdzenie rozładunku.</p></div>
+      <div class="usl"><span class="ikp" aria-hidden="true"><i></i><i></i><i></i><i></i></span><h3>Spedycja krajowa</h3><p>Przewozy na terenie Polski, organizowane z tą samą starannością co trasy zagraniczne.</p></div>
+      <div class="usl"><span class="ikp" aria-hidden="true"><i></i><i></i><i></i><i></i></span><h3>Kraje spoza Unii</h3><p>Obsługujemy także przewozy do państw spoza UE. Znamy przepisy transportowe i rozmawiamy z kontrahentami w ich językach.</p></div>
+      <div class="usl"><span class="ikp" aria-hidden="true"><i></i><i></i><i></i><i></i></span><h3>Kontakt i monitoring</h3><p>Utrzymujemy stały kontakt z klientem i przewoźnikiem, a pojazdy na trasie są monitorowane.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sek szary" id="galeria">
+  <div class="wrap">
+    <div class="glowa">
+      <h2>W trasie</h2>
+      <p>Plandeki, kontenery, ładunki krajowe i zagraniczne. Kliknij zdjęcie, aby je powiększyć.</p>
+    </div>
+    <div class="tor" id="gal" data-tor>
+      <figure class="kafel"><button type="button" data-lb="img/plandeka-1280.webp" aria-label="Powiększ: naczepa plandekowa"><img src="img/plandeka-480.webp" srcset="img/plandeka-360.webp 360w, img/plandeka-480.webp 480w, img/plandeka-720.webp 720w" sizes="(min-width:1800px) 15vw, (min-width:900px) 30vw, (min-width:640px) 46vw, 78vw" width="720" height="540" alt="Ciągnik z niebieską naczepą plandekową" loading="lazy" decoding="async"></button><figcaption><span class="px"></span>Naczepy plandekowe</figcaption></figure>
+      <figure class="kafel"><button type="button" data-lb="img/zal-1280.webp" aria-label="Powiększ: załadunek"><img src="img/zal-480.webp" srcset="img/zal-360.webp 360w, img/zal-480.webp 480w, img/zal-720.webp 720w" sizes="(min-width:1800px) 15vw, (min-width:900px) 30vw, (min-width:640px) 46vw, 78vw" width="720" height="540" alt="Naczepa z odsuniętą plandeką i drewnem na pakach" loading="lazy" decoding="async"></button><figcaption><span class="px"></span>Załadunek boczny</figcaption></figure>
+      <figure class="kafel"><button type="button" data-lb="img/a2-1280.webp" aria-label="Powiększ: autostrada A2"><img src="img/a2-480.webp" srcset="img/a2-360.webp 360w, img/a2-480.webp 480w, img/a2-720.webp 720w" sizes="(min-width:1800px) 15vw, (min-width:900px) 30vw, (min-width:640px) 46vw, 78vw" width="720" height="540" alt="Ciężarówki na autostradzie A2 przy punkcie poboru opłat" loading="lazy" decoding="async"></button><figcaption><span class="px"></span>Trasy krajowe</figcaption></figure>
+      <figure class="kafel"><button type="button" data-lb="img/kont-1280.webp" aria-label="Powiększ: transport kontenera"><img src="img/kont-480.webp" srcset="img/kont-360.webp 360w, img/kont-480.webp 480w, img/kont-720.webp 720w" sizes="(min-width:1800px) 15vw, (min-width:900px) 30vw, (min-width:640px) 46vw, 78vw" width="720" height="540" alt="Ciągnik z kontenerem na autostradzie" loading="lazy" decoding="async"></button><figcaption><span class="px"></span>Kontenery</figcaption></figure>
+      <figure class="kafel"><button type="button" data-lb="img/flat-1280.webp" aria-label="Powiększ: zestaw z platformą"><img src="img/flat-480.webp" srcset="img/flat-360.webp 360w, img/flat-480.webp 480w, img/flat-720.webp 720w" sizes="(min-width:1800px) 15vw, (min-width:900px) 30vw, (min-width:640px) 46vw, 78vw" width="720" height="540" alt="Zestaw z platformą i żurawiem na drodze ekspresowej" loading="lazy" decoding="async"></button><figcaption><span class="px"></span>Ładunki na platformach</figcaption></figure>
+      <figure class="kafel"><button type="button" data-lb="img/port-1280.webp" aria-label="Powiększ: terminal kontenerowy w Gdańsku"><img src="img/port-480.webp" srcset="img/port-360.webp 360w, img/port-480.webp 480w, img/port-720.webp 720w" sizes="(min-width:1800px) 15vw, (min-width:900px) 30vw, (min-width:640px) 46vw, 78vw" width="720" height="540" alt="Terminal kontenerowy w Gdańsku" loading="lazy" decoding="async"></button><figcaption><span class="px"></span>Trójmiasto</figcaption></figure>
+    </div>
+    <div class="gal-dol"><span>Zdjęcia poglądowe - w docelowej stronie Państwa zdjęcia.</span>
+      <div class="navb" data-nav="gal"><button type="button" data-k="-1" aria-label="Poprzednie"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M18 11H5M10 5l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg></button><button type="button" data-k="1" aria-label="Następne"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg></button></div>
+    </div>
+  </div>
+</section>
+
+<section class="sek ciemna" id="bezpieczenstwo">
+  <div class="wrap">
+    <div>
+      <div class="glowa">
+        <h2>Ładunek ubezpieczony, przewoźnik sprawdzony</h2>
+        <p>Wybór spedytora to także wybór, kto odpowiada za towar w drodze. Dlatego stawiamy na bezpieczeństwo i przejrzysty kontakt.</p>
+      </div>
+      <ul class="lista">
+        <li><span class="px"></span><div><b>OC spedytora do 300 tys. euro</b><span>Ubezpieczenie odpowiedzialności cywilnej spedytora (OCS) chroni Państwa zlecenia.</span></div></li>
+        <li><span class="px"></span><div><b>Zweryfikowani przewoźnicy</b><span>Współpracujemy wyłącznie ze sprawdzonymi kontrahentami i podwykonawcami.</span></div></li>
+        <li><span class="px"></span><div><b>Prawo i przepisy transportowe</b><span>Spedycja krajowa i międzynarodowa to temat, który dobrze znamy.</span></div></li>
+        <li><span class="px"></span><div><b>Języki obce</b><span>Sprawnie rozmawiamy z klientami i kontrahentami za granicą.</span></div></li>
+      </ul>
+    </div>
+    <div class="ocs" aria-hidden="true">
+      <svg viewBox="0 0 520 400"><defs><linearGradient id="lg2" x1=".6" y1="0" x2=".4" y2="1"><stop offset="0" stop-color="#5F7AEA"/><stop offset=".5" stop-color="#3CB1E2"/><stop offset="1" stop-color="#18E8D9"/></linearGradient></defs><g><rect x="20" y="70" width="34" height="34" rx="6" fill="#CEEBFD"/><rect x="74" y="190" width="44" height="44" rx="8" fill="#A9DEFE"/><rect x="40" y="290" width="30" height="30" rx="5" fill="#85D0FE"/><rect x="128" y="40" width="52" height="52" rx="9" fill="#85D0FE"/><rect x="146" y="282" width="56" height="56" rx="10" fill="#1CE0DA"/><rect x="150" y="150" width="40" height="40" rx="7" fill="#CEEBFD"/></g><g transform="translate(212 20) scale(1.62)"><path fill="url(#lg2)" fill-rule="evenodd" transform="translate(-96 -17)" d="M121 17 121 40 120 42 116 44 97 44 97 45 97 80 115 81 119 83 121 87 121 111 119 115 116 117 113 118 97 118 97 118 97 142 97 143 105 143 109 145 110 148 110 168 174 168 188 166 198 162 207 156 214 148 218 140 221 132 220 117 216 106 211 100 207 96 194 89 195 88 200 85 206 79 211 74 214 66 216 58 216 48 212 37 209 32 201 26 194 22 184 19 169 17ZM134 106 165 105 171 106 176 108 181 113 183 117 183 126 181 131 176 136 169 139 134 139ZM134 47 135 46 164 46 173 49 178 53 179 56 180 61 178 67 174 73 167 76 135 76 134 75Z"/></g></svg>
+      <p>Troska o klienta, bezpieczeństwo ładunku i wzajemne zaufanie to dla nas podstawa każdego zlecenia.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="zlecenie">
+  <div class="wrap">
+    <div class="glowa">
+      <h2>Jak zlecić transport</h2>
+      <p>Wystarczy krótka wiadomość z trasą i terminem. Resztą zajmujemy się my.</p>
+    </div>
+    <ol class="kroki">
+      <li><span class="st" aria-hidden="true"><i class="t"></i></span><div><b>Zapytanie</b><span>Podają Państwo miejsce załadunku i rozładunku, termin oraz rodzaj i wagę towaru.</span></div></li>
+      <li><span class="st" aria-hidden="true"><i></i><i class="t"></i></span><div><b>Wycena i przewoźnik</b><span>Przygotowujemy ofertę i dobieramy zweryfikowanego przewoźnika.</span></div></li>
+      <li><span class="st" aria-hidden="true"><i></i><i></i><i class="t"></i></span><div><b>Transport</b><span>Prowadzimy zlecenie, monitorujemy pojazd i jesteśmy w stałym kontakcie.</span></div></li>
+      <li><span class="st" aria-hidden="true"><i></i><i></i><i></i><i class="t"></i></span><div><b>Rozładunek</b><span>Potwierdzamy dostarczenie towaru i zamykamy zlecenie.</span></div></li>
+    </ol>
+    <div class="kroki-cta"><a class="btn" href="#kontakt">Wyślij zapytanie transportowe<svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg></a></div>
+  </div>
+</section>
+
+<section class="sek szary" id="kontakt">
+  <div class="wrap kont">
+    <div class="dane">
+      <div class="glowa"><h2>Kontakt</h2><p>Zapytania transportowe przyjmujemy telefonicznie, mailowo i przez formularz.</p></div>
+      <p><a class="duzy" href="tel:+48601301273"><span class="px"></span>601 301 273</a></p>
+      <p><a class="duzy" href="tel:+48730773073"><span class="px" style="background:#85D0FE"></span>730 773 073</a></p>
+      <p style="margin-top:10px"><a href="mailto:biuro@bbsped.pl">biuro@bbsped.pl</a></p>
+      <p>BB SPED Sp. z o.o., ul. Smolna 1D, 81-877 Sopot</p>
+      <p class="rej">NIP 585-149-36-08 · REGON 388700627</p>
+      <div class="mapa" id="mapa" data-src="https://maps.google.com/maps?q=Smolna%201D%2C%2081-877%20Sopot&amp;z=15&amp;output=embed" data-title="Mapa: BB SPED, ul. Smolna 1D, Sopot"></div>
+    </div>
+    <form id="form" novalidate>
+      <h3>Zapytanie transportowe</h3>
+      <p class="op">Odpowiadamy z wyceną najszybciej, jak to możliwe.</p>
+      <div class="pola">
+        <label>Miejsce załadunku<input name="skad" placeholder="np. Gdańsk, PL" autocomplete="off"></label>
+        <label>Miejsce rozładunku<input name="dokad" placeholder="np. Hamburg, DE" autocomplete="off"></label>
+        <label>Termin załadunku<input name="termin" type="date"></label>
+        <label>Rodzaj towaru i waga<input name="towar" placeholder="np. 12 palet, 8 t"></label>
+        <label>Firma / imię i nazwisko<input name="firma" autocomplete="organization"></label>
+        <label>Telefon<input name="tel" type="tel" autocomplete="tel"></label>
+        <label class="cale">E-mail<input name="email" type="email" autocomplete="email" required></label>
+        <label class="cale">Uwagi<textarea name="uwagi" placeholder="Wymiary, rodzaj naczepy, dodatkowe informacje"></textarea></label>
+      </div>
+      <label class="zgoda"><input type="checkbox" required> Wyrażam zgodę na przetwarzanie moich danych przez BB SPED Sp. z o.o. w celu odpowiedzi na zapytanie.</label>
+      <button class="btn" type="submit">Wyślij zapytanie<svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+      <p class="msg" id="msg" role="status" hidden>Dziękujemy, zapytanie dotarło. Na podany e-mail wysłaliśmy potwierdzenie - jeśli go nie widać, zajrzyj do folderu Spam. <small>(Formularz pokazowy - w podglądzie nic nie jest wysyłane.)</small></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="stopka">
+  <div class="wrap">
+    <div class="kol">
+      <div class="marka">
+        <a class="logo" href="#" aria-label="BB SPED - do góry"><svg viewBox="0 0 228 190" aria-hidden="true" style="width:40px;height:33px"><use href="#lgf"/></svg><span>BB SPED</span></a>
+        <p>Spedycja i transport międzynarodowy oraz krajowy.</p>
+      </div>
+      <div><h4>Firma</h4><p>BB SPED Sp. z o.o.</p><p>ul. Smolna 1D</p><p>81-877 Sopot</p></div>
+      <div><h4>Kontakt</h4><p><a href="tel:+48601301273">601 301 273</a></p><p><a href="tel:+48730773073">730 773 073</a></p><p><a href="mailto:biuro@bbsped.pl">biuro@bbsped.pl</a></p></div>
+      <div><h4>Na stronie</h4><p><a href="#uslugi">Usługi</a></p><p><a href="#bezpieczenstwo">Bezpieczeństwo</a></p><p><a href="#kontakt">Zapytanie transportowe</a></p></div>
+    </div>
+    <div class="dol">
+      <span class="cr">&copy; <span id="rok">2026</span> BB SPED Sp. z o.o.</span>
+      <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=bbsped.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+    </div>
+    <p class="zrodla">Podgląd koncepcji. Zdjęcia poglądowe z Wikimedia Commons: François Goglins, Llann Wé² (CC BY-SA 4.0), Ralf Lotys, Lav Ulv (CC BY 4.0), Artur Andrzej (CC0); zdjęcie drogi i logo - BB SPED.</p>
+  </div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="lg3" x1=".6" y1="0" x2=".4" y2="1"><stop offset="0" stop-color="#5F7AEA"/><stop offset=".5" stop-color="#3CB1E2"/><stop offset="1" stop-color="#18E8D9"/></linearGradient><g id="lgf"><rect x="77.75" y="3.25" width="27.25" height="27.5" rx="4.9" fill="#CEEBFD"/><rect x="42.25" y="32" width="24.5" height="24.75" rx="4.4" fill="#1CE0DA"/><rect x="6" y="45.5" width="17.75" height="17.5" rx="3.2" fill="#A9DEFE"/><rect x="48.5" y="81" width="36.5" height="36.75" rx="6.6" fill="#85D0FE"/><rect x="10.75" y="89" width="20.25" height="20.75" rx="3.6" fill="#CEEBFD"/><rect x="25.75" y="142.75" width="26.25" height="26.25" rx="4.7" fill="#A9DEFE"/><rect x="72.25" y="161" width="25.75" height="26" rx="4.6" fill="#1CE0DA"/><path fill="url(#lg3)" fill-rule="evenodd" d="M121 17 121 40 120 42 116 44 97 44 97 45 97 80 115 81 119 83 121 87 121 111 119 115 116 117 113 118 97 118 97 118 97 142 97 143 105 143 109 145 110 148 110 168 174 168 188 166 198 162 207 156 214 148 218 140 221 132 220 117 216 106 211 100 207 96 194 89 195 88 200 85 206 79 211 74 214 66 216 58 216 48 212 37 209 32 201 26 194 22 184 19 169 17ZM134 106 165 105 171 106 176 108 181 113 183 117 183 126 181 131 176 136 169 139 134 139ZM134 47 135 46 164 46 173 49 178 53 179 56 180 61 178 67 174 73 167 76 135 76 134 75Z"/></g></defs></svg>
+</footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+  <figure style="margin:0"><img id="lbimg" alt=""><p id="lbcap"></p></figure>
+  <button class="x" type="button" aria-label="Zamknij"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2" fill="none"/></svg></button>
+  <button class="pv" type="button" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M18 11H5M10 5l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+  <button class="nx" type="button" aria-label="Następne zdjęcie"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
